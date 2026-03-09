@@ -14,7 +14,6 @@ header, footer, section, aside, main{
         padding: 1em;
 }
 
-
 header, footer{
         color: white;
         background-color:  #1976D2;
@@ -64,13 +63,18 @@ div.row{
         flex-direction: column;
 }
 
+@media screen and (max-width: 600px) {
+  div.row{
+                flex-direction: column;
+        }
+}
+
 </style>
 <body>
 
 <header>Header</header>
 <div class="row">
                 <aside class="col">
-                Aside
                 <section>Section 1</section>
                 <section>Section 2</section>
         </aside>
