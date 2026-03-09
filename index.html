@@ -33,18 +33,33 @@
 
         body{
                 display: flex;
+                flex-direction: column;
                 background-color: #FFFFFF;
         }
+
+        .row{
+                display: flex;
+                flex-direction: row;
+        }
+
+        .col{
+                display: flex;
+                flex-direction: column;
+        }
+
         </style>
 <body>
 
-        <header>Header</header>
-        <aside>
+        <header>Header....</header>
+        <div class="row">
+                <aside class="col">
                 Aside
                 <section>Section 1</section>
                 <section>Section 2</section>
         </aside>
         <main>Main</main>
+        </div>
+        
         <footer>Footer</footer>
 
     
